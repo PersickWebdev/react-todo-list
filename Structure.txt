@@ -1,0 +1,31 @@
+FILE STRUCTURE - CLIENT:
+    + PAGES:
+        TasksPage
+    + COMPONENTS:
+        Header
+        Footer
+        ButtonsPanel
+        TaskList
+        TaskItem
+        TaskAddForm
+        TaskEditForm
+    + UI:
+        Button
+        Input
+        Select
+
+FILE STRUCTURE - REDUX:
+    + ACTION TYPES:
+        TasksActionTypes
+    + ACTION CREATORS:
+        TasksActionCreators
+    + REDUCERS:
+        TasksReducer
+
+DATABASE STRUCTURE:
+    tasks: Array
+        id: Number
+        description: String
+        priority: String
+        isCompleted: Boolean
+        date: Date

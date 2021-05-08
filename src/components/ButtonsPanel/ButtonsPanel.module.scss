@@ -1,0 +1,12 @@
+@import '../../scss/mixins';
+@import '../../scss/colors';
+
+.buttons-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & div:not(:last-child) {
+    margin-right: 10px;
+  }
+}

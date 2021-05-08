@@ -1,0 +1,60 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+
+.task-add-form {
+  flex: 3;
+  margin-right: 5px;
+
+  .form {
+    .input__field {
+      display: flex;
+      align-items: center;
+
+      .input {
+        flex:2;
+        border: none;
+        outline: none;
+        padding: 7px;
+        border-radius: 3px;
+        margin-right: 5px;
+        transition: all 0.3s ease;
+        &:focus {
+          background-color: $background;
+        }
+        &:focus::placeholder {
+          color: $white;
+        }
+      }
+
+      .select-box {
+        position: relative;
+
+        .select {
+          flex:2;
+          border: none;
+          outline: none;
+          padding: 7px;
+          border-radius: 3px;
+          margin-right: 5px;
+          transition: all 0.3s ease;
+          color: $light-grey;
+          &:focus {
+            color: $white;
+            background-color: $background;
+          }
+        }
+
+        .dropdown {
+          position: absolute;
+          top: 33px;
+          left: 0;
+          width: calc(100% - 5px);
+          padding: 5px;
+          list-style: none;
+          background-color: $white;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}

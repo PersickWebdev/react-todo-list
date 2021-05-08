@@ -1,26 +1,12 @@
-import React from "react";
-import style from './TaskList.module.css';
-import Task from "./Task/Task";
+import React from 'react';
+import styles from './TaskList.module.scss';
 
-const TaskList = ({tasks, toggleCheck, removeTask, toggleEditMode, updateText, saveText}) => {
-    let tasksElements = tasks.map((task, index) => {
-        return (
-            <Task key={task.id}
-                  index={index}
-                  task={task}
-                  toggleCheck={toggleCheck}
-                  removeTask={removeTask}
-                  toggleEditMode={toggleEditMode}
-                  updateText={updateText}
-                  saveText={saveText}/>
-        )
-    });
-
+const TaskList = () => {
     return (
-        <div className={style.taskList__container}>
-            {tasksElements}
+        <div className={styles['task-list']}>
+            TaskList
         </div>
-    )
-}
+    );
+};
 
 export default TaskList;

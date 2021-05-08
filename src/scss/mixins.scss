@@ -1,0 +1,23 @@
+@mixin container(
+  $margin,
+  $maxWidth,
+  $width,
+  $display,
+  $justifyContent,
+  $alignItems
+) {
+  margin: $margin;
+  max-width: $maxWidth;
+  width: $width;
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+};
+
+@mixin text($font-size, $font-weight, $line-height, $text-transform, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  color: $color;
+};

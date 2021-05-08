@@ -1,0 +1,25 @@
+@import '../../scss/mixins';
+@import '../../scss/colors';
+
+.header {
+  padding: 20px 0;
+  background-color: $dark-grey;
+
+  .container {
+    @include container(0 auto, 1024px, 100%, flex, space-between, center);
+
+    .logo__container {
+      .logo__text {
+        @include text(36px, 900, 36px, unset, $white);
+        & span {
+          @include text(36px, 900, 36px, unset, $background);
+        }
+      }
+    }
+    .name__container {
+      .name__text {
+        @include text(30px, 600, 30px, uppercase, $white);
+      }
+    }
+  }
+}
