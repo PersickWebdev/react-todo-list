@@ -1,0 +1,32 @@
+{
+  "tasks": {
+    "01/01/2021": [
+      {
+        "id": 1,
+        "description": "Buy food",
+        "priority": "medium",
+        "isCompleted": false
+      },
+      {
+        "id": 2,
+        "description": "Buy water",
+        "priority": "low",
+        "isCompleted": false
+      }
+    ],
+    "01/02/2021": [
+      {
+        "id": 3,
+        "description": "Walk the cat",
+        "priority": "medium",
+        "isCompleted": false
+      },
+      {
+        "id": 4,
+        "description": "Write email",
+        "priority": "high",
+        "isCompleted": false
+      }
+    ]
+  }
+}
